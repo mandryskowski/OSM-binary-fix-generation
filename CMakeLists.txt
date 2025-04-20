@@ -17,6 +17,6 @@ find_package(Protobuf REQUIRED)
 add_subdirectory(osmpbf)
 
 # The osmpbf-outline tool does not compile on Windows because getopt.h is missing
-if(NOT MSVC)
-    add_subdirectory(tools)
-endif()
+#if(NOT MSVC)
+    #add_subdirectory(tools)
+#endif()
