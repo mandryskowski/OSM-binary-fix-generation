@@ -5,6 +5,9 @@ protobuf_generate(
     LANGUAGE cpp
     PROTOS fileformat.proto osmformat.proto
 )
+set_target_properties(osmpbf PROPERTIES
+POSITION_INDEPENDENT_CODE ON
+)
 
 # Add static library
 target_compile_features(osmpbf PUBLIC cxx_std_11)
